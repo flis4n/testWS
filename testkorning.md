@@ -7,10 +7,10 @@
 
 | Testfalls-ID | Faktiskt resultat (kort men konkret) | Utfall: Godkänd / Underkänd / Blockerad | Otydligt? (varför?) | Issue-länk |
 | --- | --- | --- | --- | --- |
-| TC-LOG-01 | | | | |
+| TC-LOG-01 | Inloggning lyckades. inventory.html öppnades och "Products" visades. | Godkänd | Nej | - |
 | TC-LOG-02 | | | | |
 | TC-LOG-03 | | | | |
-| TC-CRT-01 | | | | |
+| TC-CRT-01 | Knappen ändrades inte till "Remove". Varukorgsikonen visade inget antal. Testat med problem_user. | Underkänd | Nej | #1 |
 | TC-CRT-02 | | | | |
 | [lägg till fler] | | | | |
 
