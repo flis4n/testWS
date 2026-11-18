@@ -1,0 +1,122 @@
+
+name: "Buggrapport – Sauce Demo"
+description: "Rapportera en avvikelse som upptäckts under testning."
+title: "BUG: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Rapportera en bugg
+        Skriv så att ett annat par kan återskapa felet.
+        Skapa en rapport per avvikelse.
+
+  - type: input
+    id: testfall
+    attributes:
+      label: "Testfalls-ID"
+      description: "Vilket testfall upptäckte felet?"
+      placeholder: "TC-CRT-01"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: krav
+    attributes:
+      label: "Krav-ID"
+      options:
+        - LOG-01
+        - LOG-02
+        - LOG-03
+        - LOG-04
+        - LOG-05
+        - LOG-06
+        - LOG-07
+        - CRT-01
+        - CRT-02
+        - CRT-03
+        - CRT-04
+        - CRT-05
+        - CRT-06
+        - Annat eller oklart
+    validations:
+      required: true
+
+  - type: dropdown
+    id: anvandare
+    attributes:
+      label: "Testkonto"
+      options:
+        - standard_user
+        - locked_out_user
+        - problem_user
+        - performance_glitch_user
+        - Ej relevant
+    validations:
+      required: true
+
+  - type: input
+    id: miljo
+    attributes:
+      label: "Testmiljö"
+      description: "Webbläsare, version och operativsystem"
+      placeholder: "Chrome, Windows 11"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steg
+    attributes:
+      label: "Steg för att återskapa"
+      description: "Numrera stegen och ange exakta testdata."
+      placeholder: |
+        1. Öppna https://www.saucedemo.com
+        2. Logga in med ...
+        3. Klicka på ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: forvantat
+    attributes:
+      label: "Förväntat resultat"
+      description: "Vad ska hända enligt kravet?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: faktiskt
+    attributes:
+      label: "Faktiskt resultat"
+      description: "Vad hände under testkörningen?"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: allvarlighet
+    attributes:
+      label: "Allvarlighetsgrad"
+      options:
+        - Kritisk
+        - Hög
+        - Medel
+        - Låg
+    validations:
+      required: true
+
+  - type: textarea
+    id: bilaga
+    attributes:
+      label: "Skärmdump eller annan bilaga"
+      description: "Dra in en bild eller beskriv bevis."
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: kontroll
+    attributes:
+      label: "Kontroll före rapportering"
+      options:
+        - label: "Jag har försökt återskapa felet."
+          required: true
+        - label: "Jag har kontrollerat att felet inte redan är rapporterat."
+          required: true
