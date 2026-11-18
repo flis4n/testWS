@@ -41,11 +41,11 @@
 ## TC-CRT-01 – Lägg till en produkt
 - **Krav:** CRT-01, CRT-02
 - **Typ:** Positivt
-- **Förkrav:** Logga in som `standard_user`; varukorgen är tom.
-- **Testdata:** `Sauce Labs Backpack`
+- **Förkrav:** Logga in som `problem_user`; varukorgen är tom.
+- **Testdata:** `Sauce Labs Bolt T-Shirt`
 - **Steg:**
   1. Öppna produktlistan.
-  2. Klicka på `Add to cart` vid `Sauce Labs Backpack`.
+  2. Klicka på `Add to cart` vid `Sauce Labs Bolt T-Shirt`.
 - **Förväntat resultat:** Produktens knapp blir `Remove`; varukorgsikonen visar `1`.
 
 ## TC-CRT-02 – Ta bort enda produkten
