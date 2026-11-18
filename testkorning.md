@@ -1,7 +1,7 @@
-# Testkörning – fylls i av det testande paret
+# Testkörning – fylls i av testaren
 
-- **Författande par:**
-- **Testande par:**
+- **Författare av testfall:**
+- **Testare:**
 - **Datum, webbläsare, operativsystem:**
 - **Körning:** Ny ren session inför varje testfall
 
@@ -17,7 +17,7 @@
 ## Feedback till författarna
 - **Det här var lätt att följa:**
 - **Det här behövde tolkas:**
-- **Föreslagna förbättringar (minst två):**
+- **Föreslagna förbättringar:**
   1. ...
   2. ...
 
