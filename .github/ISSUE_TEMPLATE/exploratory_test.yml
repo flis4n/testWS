@@ -1,0 +1,113 @@
+
+name: "Utforskande testning"
+description: "Dokumentera en exploratory testing-session"
+title: "EXP: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Utforskande testning – Sauce Demo
+        Utforska systemet utifrån ett tydligt uppdrag.
+        Dokumentera vad ni provar och upptäcker.
+        Rapportera eventuella buggar som separata Issues.
+
+  - type: input
+    id: testare
+    attributes:
+      label: "Testare / par"
+      placeholder: "Par 2"
+    validations:
+      required: true
+
+  - type: input
+    id: charter
+    attributes:
+      label: "Testuppdrag (charter)"
+      description: "Vad ska ni undersöka och varför?"
+      placeholder: "Undersök om varukorgen alltid visar rätt antal."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: omrade
+    attributes:
+      label: "Område"
+      options:
+        - Inloggning
+        - Varukorg
+        - Kombination av flera områden
+    validations:
+      required: true
+
+  - type: input
+    id: testdata
+    attributes:
+      label: "Testkonto och testdata"
+      placeholder: "problem_user, secret_sauce"
+    validations:
+      required: true
+
+  - type: input
+    id: miljo
+    attributes:
+      label: "Testmiljö"
+      placeholder: "Chrome, Windows 11"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: tid
+    attributes:
+      label: "Planerad tid"
+      options:
+        - 10 minuter
+        - 15 minuter
+        - 20 minuter
+        - 30 minuter
+    validations:
+      required: true
+
+  - type: textarea
+    id: tester
+    attributes:
+      label: "Vad provade ni?"
+      description: "Beskriv de tester ni utförde."
+      placeholder: |
+        1. Lade till en produkt.
+        2. Tog bort produkten.
+        3. Lade till flera produkter.
+    validations:
+      required: true
+
+  - type: textarea
+    id: observationer
+    attributes:
+      label: "Observationer och resultat"
+      description: "Vad fungerade? Vad var oväntat?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: buggar
+    attributes:
+      label: "Buggar och avvikelser"
+      description: "Länka till separata GitHub Bug Issues."
+      placeholder: "#12, #13 eller Inga buggar"
+    validations:
+      required: true
+
+  - type: textarea
+    id: fragor
+    attributes:
+      label: "Nya frågor och testidéer"
+      description: "Vad vill ni undersöka vidare?"
+    validations:
+      required: false
+
+  - type: textarea
+    id: slutsats
+    attributes:
+      label: "Sammanfattning och riskbedömning"
+      description: "Vad lärde ni er? Vilka risker kvarstår?"
+    validations:
+      required: true
