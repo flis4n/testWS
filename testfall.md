@@ -1,6 +1,6 @@
 # Testfall – fyll i och komplettera
 
-**Instruktion:** skapa minst sju nya testfall så att ni får minst tolv totalt. Minst fyra negativa, två gränsvärdestester, samt täckning av alla LOG- och CRT-krav. Förkrav, data och observerbara resultat ska vara explicita. Ta inte bort exemplen nedan.
+**Instruktion:** skapa minst fem nya testfall så att ni får minst tio totalt. Minst två negativa, två gränsvärdestester, samt täckning av alla LOG- och CRT-krav. Förkrav, data och observerbara resultat ska vara explicita. Ta inte bort exemplen nedan.
 
 ## TC-LOG-01 – Giltig inloggning
 - **Krav:** LOG-01
