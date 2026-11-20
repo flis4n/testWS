@@ -21,7 +21,7 @@ Testobjekt: https://www.saucedemo.com/
 ## Byte mellan testare
 
 1. Den som **skrev** testfallen delar repo-länken med en annan.
-2. Det **testande** paret följer teststegen utan muntliga förklaringar och dokumenterar sitt resultat i `testkorning.md`.
+2. Den **testande** följer teststegen utan muntliga förklaringar och dokumenterar sitt resultat i `testkorning.md`.
 3. Verkliga avvikelser från kraven rapporteras som GitHub **Issues** i repositoryt. Välj mallen `Buggrapport`.
 4. Oklarheter i testfall noteras som feedback, inte automatiskt som buggar i systemet.
 5. Den som skrev testfallen gör förbättringar och länkar till commit eller pull request.
